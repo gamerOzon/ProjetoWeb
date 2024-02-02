@@ -1,0 +1,310 @@
+   
+---  html ---
+
+    <div class="Grupocomosdestaques"> 
+        <div class="destaqueEBotao">
+            <br>
+            <h1 class="destaque">DESTAQUES</h1>
+            <a href="#">
+                <button class="butaodetodososdestaques" type="button">Todos os destaques ></button>
+            </a>
+        </div>
+
+
+        <section class="listadePosts"> 
+            <div class="conteudo"> 
+                <article class="post">
+                    <div class="postHeader"> 
+                        <div class="postimagem1"> >
+                        </div>
+                        <div class="postbody">
+
+                            <span> 30 dezembro 2022 | IPB </span> <!--aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML-->
+                            
+                            <h2>Bolsas Inovadoras IPB</h2>
+
+                            <p>No âmbito da Aliança de Montanha para o Conhecimento e Co-Criação, 
+                               com financiamento PRR, o IPB disponibiliza um conjunto de bolsas 
+                               inovadoras que pretendem incentivar...</p>
+                            <a href="#">
+                                <button class="linkdoPost" type="button">Ler mais...</button> 
+                            </a>
+                              
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="postHeader">
+                        <div class="postimagem1">
+                        </div>
+                        <div class="postbody">
+
+                            <span> 30 dezembro 2022 | Esact </span> <!--aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML-->
+                            
+                            <h2>Bolsas Inovadoras IPB</h2>
+
+                            <p>No âmbito da Aliança de Montanha para o Conhecimento e Co-Criação, 
+                               com financiamento PRR, o IPB disponibiliza um conjunto de bolsas 
+                               inovadoras que pretendem incentivar...</p>
+
+                            <a href="#">
+
+                                <button class="linkdoPost" type="button">Ler mais...</button>
+                            </a>
+                              
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="postHeader">
+                        <div class="postimagem1">
+                        </div>
+                        <div class="postbody">
+
+                            <span> 30 dezembro 2022 | ESA </span> <!--aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML-->
+                            
+                            <h2>Bolsas Inovadoras IPB</h2>
+
+                            <p>No âmbito da Aliança de Montanha para o Conhecimento e Co-Criação, 
+                               com financiamento PRR, o IPB disponibiliza um conjunto de bolsas 
+                               inovadoras que pretendem incentivar...</p>
+                            <a href="#">
+
+                                <button class="linkdoPost" type="button">Ler mais...</button>
+                            </a>
+                              
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="postHeader">
+                        <div class="postimagem1">
+                        </div>
+                        <div class="postbody">
+
+                            <span> 30 dezembro 2022 | ESA </span> <!--aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML-->
+                            
+                            <h2>Bolsas Inovadoras IPB</h2>
+
+                            <p>No âmbito da Aliança de Montanha para o Conhecimento e Co-Criação, 
+                               com financiamento PRR, o IPB disponibiliza um conjunto de bolsas 
+                               inovadoras que pretendem incentivar...</p>
+                            <a href="#">
+
+                                <button class="linkdoPost" type="button">Ler mais...</button>
+                            </a>
+                              
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </div>
+
+
+--- pug ---
+
+.Grupocomosdestaques
+  .destaqueEBotao
+    br
+    h1.destaque DESTAQUES
+    a(href='#')
+      button.butaodetodososdestaques(type='button') Todos os destaques &gt;
+  section.listadePosts
+    .conteudo
+      article.post
+        .postHeader
+          .postimagem1
+            | &gt;
+          .postbody
+            span  30 dezembro 2022 | IPB 
+            // aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML
+            h2 Bolsas Inovadoras IPB
+            p
+              | No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o,
+              | com financiamento PRR, o IPB disponibiliza um conjunto de bolsas
+              | inovadoras que pretendem incentivar...
+            a(href='#')
+              button.linkdoPost(type='button') Ler mais...
+      article.post
+        .postHeader
+          .postimagem1
+          .postbody
+            span  30 dezembro 2022 | Esact 
+            // aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML
+            h2 Bolsas Inovadoras IPB
+            p
+              | No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o,
+              | com financiamento PRR, o IPB disponibiliza um conjunto de bolsas
+              | inovadoras que pretendem incentivar...
+            a(href='#')
+              button.linkdoPost(type='button') Ler mais...
+      article.post
+        .postHeader
+          .postimagem1
+          .postbody
+            span  30 dezembro 2022 | ESA 
+            // aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML
+            h2 Bolsas Inovadoras IPB
+            p
+              | No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o,
+              | com financiamento PRR, o IPB disponibiliza um conjunto de bolsas
+              | inovadoras que pretendem incentivar...
+            a(href='#')
+              button.linkdoPost(type='button') Ler mais...
+      article.post
+        .postHeader
+          .postimagem1
+          .postbody
+            span  30 dezembro 2022 | ESA 
+            // aplicar estilos a um pedaço específico de texto sem precisar adicionar uma nova marcação ou elemento HTML
+            h2 Bolsas Inovadoras IPB
+            p
+              | No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o,
+              | com financiamento PRR, o IPB disponibiliza um conjunto de bolsas
+              | inovadoras que pretendem incentivar...
+            a(href='#')
+              button.linkdoPost(type='button') Ler mais...
+
+--- css ---
+
+.Grupocomosdestaques{
+    margin: 20px;
+
+}
+
+/* a parte tipo noticias destaques*/
+.destaqueEBotao{
+    margin-top: 25px; /* adiciona 50 pixels de margem no topo */
+    margin-bottom: 60px; /* adiciona 50 pixels de margem para baixo*/
+}
+
+.destaque{
+    font-size: 25px;
+    color: #5CB6A9;
+    float: left;
+    padding: 5px 0px 0px 50px; /*o mesmo que o logo para alinhar*/
+}
+
+.butaodetodososdestaques{
+    float: right;
+    border: 0;
+    background-color: #fff;
+    color: #5CB6A9;
+    text-decoration: underline;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+
+/*Agora entra mesmo a cena dos destaques*/
+.listadePosts{
+    display: flex;
+    min-height: 100hv; /* o corpo da página ocupa a altura total da tela */
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Tambem dava para usar 25% 25% 25% 25%*/
+    grid-gap: 70px; /*espaço entre os elemento*/
+    max-width: 1400px;
+    margin: auto;
+} 
+
+.postimagem1{
+    background: url(/Images/transferir.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1); /*Preto com 1 de transparencia*/
+    overflow: hidden;
+    transition: .2s;
+    border-radius: 16px; /*arredondar os cantos das div*/
+}
+
+.post:hover{
+    transform: translateY(-4px); /*Faz com que ele suba ao passar o rato 4px*/
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15); /*Fazer a sombra acompanhar*/
+}
+
+/*ta a deseparecer*/
+
+.postHeader{
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .postimagem1{
+    transform: scale(1.1);
+}
+
+.postbody{
+    padding: 10%;
+    text-align: center;
+}
+
+.postbody span{
+    display: inline-block;
+    color: #5CB6A9;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.postbody h2{
+    margin-bottom: 15px;
+}
+
+.postbody p{
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.postbody .linkdoPost{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #5CB6A9;
+    color: white;
+    width: 50%;;
+    margin: auto;
+    border-radius: 25px; /*Arredondar as borders*/
+    border: none;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.postbody .linkdoPost:hover{
+    background: #499693;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+@media (max-width: 840px){
+    .conteudo{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px; /*espaço entre os elemento*/
+ 
+    }
+}
+
+    @media (max-width: 600x){
+    .conteudo{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px; /*espaço entre os elemento*/
+    }
+}

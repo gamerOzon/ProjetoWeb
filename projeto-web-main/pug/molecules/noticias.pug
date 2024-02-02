@@ -1,0 +1,26 @@
+
+include ../atoms/lermais
+mixin postMolecule(date, organization, title, description)
+  article.post
+    .postHeader
+      .postimagem1
+        | &gt;
+      .postbody
+        span #{date} | #{organization}
+        h2.postTitle #{title}
+        p.postDescription #{description}
+        +lerMaisButton()
+
+.Grupocomosdestaques
+  .destaqueEBotao
+    br
+    h1.destaque DESTAQUES
+    a(href='#')
+    button.butaodetodososdestaques(type='button') Todos os destaques &gt;
+  section.listadePosts
+    .conteudo
+      +postMolecule('30 dezembro 2022', 'IPB', 'Bolsas Inovadoras IPB', 'No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o, com financiamento PRR, o IPB disponibiliza um conjunto de bolsas inovadoras que pretendem incentivar...')
+      +postMolecule('30 dezembro 2022', 'Esact', 'Bolsas Inovadoras IPB', 'No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o, com financiamento PRR, o IPB disponibiliza um conjunto de bolsas inovadoras que pretendem incentivar...')
+      +postMolecule('30 dezembro 2022', 'ESA', 'Bolsas Inovadoras IPB', 'No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o, com financiamento PRR, o IPB disponibiliza um conjunto de bolsas inovadoras que pretendem incentivar...')
+      +postMolecule('30 dezembro 2022', 'ESA', 'Bolsas Inovadoras IPB', 'No &acirc;mbito da Alian&ccedil;a de Montanha para o Conhecimento e Co-Cria&ccedil;&atilde;o, com financiamento PRR, o IPB disponibiliza um conjunto de bolsas inovadoras que pretendem incentivar...')
+     

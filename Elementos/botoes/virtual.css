@@ -1,0 +1,17 @@
+.virtual{
+    background-color: #fff;
+    border-style: solid;
+    border-width: thin;    
+    border-color: #5CB6A9;
+    font-size: 18px;
+    color: #5CB6A9;
+    padding: 10px;
+}
+
+.virtual:hover{
+    background-color: #5CB6A9;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+# Check branch
+git status
+
+# Show current branch
+git branch
+
+# Create new branch
+git checkout -b <branch_name>
+c
+# Rebase from master to current branch
+git pull --rebase origin master
+git push --force-with-lease
+
+# Pushing a new change
+git add .
+git commit -m "[FEAT] My commit sexy message"
+git push
+
+# Change commit message before pushing
+git commit --ammend

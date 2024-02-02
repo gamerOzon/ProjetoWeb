@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.acordeao{
+   margin: 100px auto;
+   width: 600px;
+}
+
+.acordeao li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #EEEEEE;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.acordeao li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #5CB6A9;
+}
+
+.acordeao li label span{
+    transform: rotate(90deg);
+    font-size: 16px;
+}
+
+.acordeao label + input[type="radio"]{
+    display: none;
+}
+
+.acordeao .conteudodoacordeao{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.acordeao label + input[type="radio"]:checked + .conteudodoacordeao{
+    max-height: 400px;
+}

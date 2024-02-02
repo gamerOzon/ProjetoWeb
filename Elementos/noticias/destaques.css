@@ -1,0 +1,249 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+/*//////////////////////CÓDIGO COMEÇA AQUI/////////////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.Grupocomosdestaques{
+    margin: 20px;
+
+}
+
+/* a parte tipo noticias destaques*/
+.destaqueEBotao{
+    margin-top: 25px; /* adiciona 50 pixels de margem no topo */
+    margin-bottom: 60px; /* adiciona 50 pixels de margem para baixo*/
+}
+
+.destaque{
+    font-size: 25px;
+    color: #5CB6A9;
+    float: left;
+    padding: 5px 0px 0px 50px; /*o mesmo que o logo para alinhar*/
+}
+
+.butaodetodososdestaques{
+    float: right;
+    border: 0;
+    background-color: #fff;
+    color: #5CB6A9;
+    text-decoration: underline;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+
+/*Agora entra mesmo a cena dos destaques*/
+.listadePosts{
+    display: flex;
+    min-height: 100hv; /* o corpo da página ocupa a altura total da tela */
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Tambem dava para usar 25% 25% 25% 25%*/
+    grid-gap: 70px; /*espaço entre os elemento*/
+    max-width: 1400px;
+    margin: auto;
+} 
+
+.postimagem1{
+    background: url(/Images/transferir.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1); /*Preto com 1 de transparencia*/
+    overflow: hidden;
+    transition: .2s;
+    border-radius: 16px; /*arredondar os cantos das div*/
+}
+
+.post:hover{
+    transform: translateY(-4px); /*Faz com que ele suba ao passar o rato 4px*/
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15); /*Fazer a sombra acompanhar*/
+}
+
+/*ta a deseparecer*/
+
+.postHeader{
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .postimagem1{
+    transform: scale(1.1);
+}
+
+.postbody{
+    padding: 10%;
+    text-align: center;
+}
+
+.postbody span{
+    display: inline-block;
+    color: #5CB6A9;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.postbody h2{
+    margin-bottom: 15px;
+}
+
+.postbody p{
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.postbody .linkdoPost{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #5CB6A9;
+    color: white;
+    width: 50%;;
+    margin: auto;
+    border-radius: 25px; /*Arredondar as borders*/
+    border: none;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.postbody .linkdoPost:hover{
+    background: #499693;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+@media (max-width: 840px){
+    .conteudo{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px; /*espaço entre os elemento*/
+ 
+    }
+}
+
+    @media (max-width: 600x){
+    .conteudo{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px; /*espaço entre os elemento*/
+    }
+}

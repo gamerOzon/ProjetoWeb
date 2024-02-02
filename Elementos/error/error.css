@@ -1,0 +1,19 @@
+.errorpart{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.texterror{
+align-self: center;
+padding-right: 100px;
+}
+
+.texterror h3{
+   font-size: 32px;
+}
+
+.texterror p{
+    font-size: 32px;
+    color: #979797;
+ }

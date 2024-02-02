@@ -1,0 +1,130 @@
+--- html ---
+
+ <div class="acordeao">
+        <ul>
+            <li>
+                <label for="primeiroacordeao">Estudantes Nacionais <span>&#x3e;</span></label>
+                <input type="radio" name="acordeao" id="primeiroacordeao" checked>
+                <div class="conteudodoacordeao">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quasi inventore rem hic ea sapiente corporis corrupti, 
+                        aspernatur nam? Sapiente temporibus culpa excepturi vel 
+                        a sequi est officia molestiae harum nesciunt nam architecto 
+                        adipisci, minus aspernatur quas dolores? </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="segundoacordeao">Estudantes Nacionais <span>&#x3e;</span></label>
+                <input type="radio" name="acordeao" id="segundoacordeao">
+                <div class="conteudodoacordeao">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quasi inventore rem hic ea sapiente corporis corrupti, 
+                        aspernatur nam? Sapiente temporibus culpa excepturi vel 
+                        a sequi est officia molestiae harum nesciunt nam architecto 
+                        adipisci, minus aspernatur quas dolores? </p>
+                </div>
+            </li>
+
+            <li>
+                <label for="terceiroacordeao">Estudantes Nacionais <span>&#x3e;</span></label>
+                <input type="radio" name="acordeao" id="terceiroacordeao">
+                <div class="conteudodoacordeao">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quasi inventore rem hic ea sapiente corporis corrupti, 
+                        aspernatur nam? Sapiente temporibus culpa excepturi vel 
+                        a sequi est officia molestiae harum nesciunt nam architecto 
+                        adipisci, minus aspernatur quas dolores? </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+--- pug ---
+
+.acordeao
+  ul
+    li
+      label(for='primeiroacordeao')
+        | Estudantes Nacionais 
+        span &gt;
+      input#primeiroacordeao(type='radio' name='acordeao' checked='')
+      .conteudodoacordeao
+        p
+          | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          | Quasi inventore rem hic ea sapiente corporis corrupti,
+          | aspernatur nam? Sapiente temporibus culpa excepturi vel
+          | a sequi est officia molestiae harum nesciunt nam architecto
+          | adipisci, minus aspernatur quas dolores?
+    li
+      label(for='segundoacordeao')
+        | Estudantes Nacionais 
+        span &gt;
+      input#segundoacordeao(type='radio' name='acordeao')
+      .conteudodoacordeao
+        p
+          | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          | Quasi inventore rem hic ea sapiente corporis corrupti,
+          | aspernatur nam? Sapiente temporibus culpa excepturi vel
+          | a sequi est officia molestiae harum nesciunt nam architecto
+          | adipisci, minus aspernatur quas dolores?
+    li
+      label(for='terceiroacordeao')
+        | Estudantes Nacionais 
+        span &gt;
+      input#terceiroacordeao(type='radio' name='acordeao')
+      .conteudodoacordeao
+        p
+          | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          | Quasi inventore rem hic ea sapiente corporis corrupti,
+          | aspernatur nam? Sapiente temporibus culpa excepturi vel
+          | a sequi est officia molestiae harum nesciunt nam architecto
+          | adipisci, minus aspernatur quas dolores?
+
+--- css ---
+
+.acordeao{
+   margin: 100px auto;
+   width: 600px;
+}
+
+.acordeao li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #EEEEEE;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.acordeao li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #5CB6A9;
+}
+
+.acordeao li label span{
+    transform: rotate(90deg);
+    font-size: 16px;
+}
+
+.acordeao label + input[type="radio"]{
+    display: none;
+}
+
+.acordeao .conteudodoacordeao{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.acordeao label + input[type="radio"]:checked + .conteudodoacordeao{
+    max-height: 400px;
+}

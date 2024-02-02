@@ -1,0 +1,15 @@
+extends ../templates/template.pug
+
+
+block variables
+  - var title="home"
+
+block content
+  include ../molecules/slider
+  include ../molecules/noticias
+  include ../molecules/infoshome
+  include ../molecules/timelinehome
+  
+  
+block scripts 
+  script(src="assets/js/slider.js")

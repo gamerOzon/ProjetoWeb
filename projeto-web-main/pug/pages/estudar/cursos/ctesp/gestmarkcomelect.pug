@@ -1,0 +1,17 @@
+extends ../../../../templates/template
+
+block variables
+  - var title="Cursos"
+  - var directory="../../../"
+
+block content
+  include ../../../../molecules/banner  
+  include ../../../../organisms/testTitle 
+  include ../../../../organisms/descricaoTitle
+  include ../../../../molecules/acordeao 
+  include ../../../../molecules/tabelacientifica
+  include ../../../../molecules/planocurricular  
+
+
+block scripts 
+  script(src="../../../assets/js/index.js")  
