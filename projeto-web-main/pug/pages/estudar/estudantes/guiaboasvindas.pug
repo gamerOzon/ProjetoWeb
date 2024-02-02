@@ -1,0 +1,13 @@
+extends ../../../templates/template
+
+block variables
+  - var title="Guia de Boas-Vindas"
+  - var directory="../../"
+
+block content
+  include ../../../molecules/banner  
+  include ../../../organisms/titulos
+  include ../../../molecules/pagemenu
+
+block scripts 
+  script(src="../assets/js/index.js")  

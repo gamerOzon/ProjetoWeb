@@ -1,0 +1,14 @@
+extends ../../../templates/template
+
+block variables
+  - var title="Historia"
+  - var directory="../../"
+
+block content
+  include ../../../molecules/banner  
+  include ../../../organisms/TestTitle
+  include ../../../molecules/cronologia
+  include ../../../molecules/pagemenu
+
+block scripts 
+  script(src="../assets/js/index.js")  

@@ -1,0 +1,28 @@
+.Slideshow
+  .slides
+    // Botões Radio
+    input#radio1(type='radio' name='botaoRedondo')
+    input#radio2(type='radio' name='botaoRedondo')
+    input#radio3(type='radio' name='botaoRedondo')
+    input#radio4(type='radio' name='botaoRedondo')
+    // Imagens slides
+    .slide.first
+       img(src= directory + "assets/images/esact.jpg", alt="logo")
+    .slide
+      img(src= directory + "assets/images/esact1.jpg", alt="logo")
+    .slide
+      img(src= directory + "assets/images/esact2.jpg", alt="logo")
+    .slide
+      img(src= directory + "assets/images/esact3.jpg", alt="logo")
+    // Navegação automática
+    .navegacaoAutomatica
+      .botaoauto1
+      .botaoauto2
+      .botaoauto3
+      .botaoauto4
+  .navegacaomanual
+    label.botaomanual(for='radio1')
+    label.botaomanual(for='radio2')
+    label.botaomanual(for='radio3')
+    label.botaomanual(for='radio4')
+script(src='/Elementos/slider/slider.js')

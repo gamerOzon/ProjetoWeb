@@ -1,0 +1,20 @@
+- var directory="./"
+
+include ../atoms/cta
+
+block variables
+doctype html
+html(lang="pt")
+  head
+    include ../organisms/head
+    block meta
+  body
+    include ../molecules/nav
+    include ../atoms/virtual
+
+    main
+      block content
+
+    include ../organisms/footers
+
+    block scripts

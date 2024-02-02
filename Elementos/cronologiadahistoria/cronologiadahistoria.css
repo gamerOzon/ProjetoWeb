@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.cronoflex{
+    display: flex;
+    margin-top: 60px;
+}
+
+.cronoflex img{
+    padding-top: 50px;
+    width: 50%;
+    height: 50%;
+}
+.cronologiadahistoria{
+    margin: 90px auto;
+    width: 800px;
+    border-left: 2px solid #5CB6A9;
+    padding: 0 20px 0 30px;
+}
+
+.caixadacronologiadahist{
+    padding: 10px 25px;
+}
+
+.caixadacronologiadahist h2, h3 {
+    color: #5CB6A9;
+} 
+
+.caixadacronologiadahist p {
+    margin-bottom: 10px;
+}
+
+.caixadacronologiadahist::before{
+    content: '';
+    display: block;
+    width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background-color: #5CB6A9;
+    border: 3px solid #5CB6A9;
+    position: relative;
+    top: 43px;
+    left: -63px;
+}

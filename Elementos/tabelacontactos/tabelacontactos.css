@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.tabeladecontactos {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .conteudodatabeladecontactos {
+    padding: 30px;
+  }
+  
+  .conteudodatabeladecontactos h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .conteudodatabeladecontactos h3 {
+    font-size: 16px;
+    text-align: center;
+    color: #5CB6A9;
+  }
+  
+  .conteudodatabeladecontactos p {
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+  }

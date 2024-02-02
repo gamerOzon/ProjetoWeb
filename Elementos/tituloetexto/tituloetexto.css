@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.caixadotituloetexto {
+    display: flex;
+  }
+  
+  .titulostandard {
+    text-align: left;
+    font-size: 40px;
+    color: #5CB6A9;
+    
+  }
+  
+  .textostandard {
+    text-align:left;
+    font-size: 20px;
+    color: black;
+    padding: 40px;
+  }
